@@ -5,14 +5,23 @@
 .wrapper{
     width: 100%;
     height: 100vh;
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   background: url("./background.jpg") no-repeat;
-   background-size: cover;
+    text-align: center;
+    background: url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.wrapper>p{
-    font-size: 25px;
+.wrapper>h1{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 120px;
+}
+.wrapper .countdown{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.wrapper .countdown>p{
+    font-size: 64px;
     margin: 0 15px;
 }
+
