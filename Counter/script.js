@@ -3,16 +3,18 @@ let value = document.querySelector(".value")
 let counter =0
 bnts.forEach((button)=>{
     button.addEventListener("click",(e)=>{
-        const style = e.currentTarget.classList
-        if(style.contains("decrease")){
+        const event = e.currentTarget.classList
+        if(event.contains("decrease")){
             counter--
         }
-        if(style.contains("reset")){
+        if(event.contains("reset")){
             counter=0
         }
-        if(style.contains("increase")){
+        if(event.contains("increase")){
             counter++
         }
         value.innerHTML = counter
+        counter === 0 ? value.style.color="#222" : (counter>0) ? value.style.color="green" : value.style.color="red"
+
     })
 })
