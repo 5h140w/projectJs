@@ -50,6 +50,30 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
 
-//prev.addEventListener("click",()=>{
+prev.addEventListener("click",()=>{
+    --currentItem<0 ? currentItem= reviews.length-1 : currentItem
+    const item = reviews[currentItem]
+    img.src = item.src;
+    author.innerHTML = item.name
+    job.innerHTML = item.job
+    description.innerHTML = item.description
+})
 
-//})
+next.addEventListener("click",()=>{
+    ++currentItem>reviews.length-1 ? currentItem= 0 : currentItem
+    const item = reviews[currentItem]
+    img.src = item.src;
+    author.innerHTML = item.name
+    job.innerHTML = item.job
+    description.innerHTML = item.description
+})
+
+random.addEventListener("click",()=>{
+    currentItem= Math.floor(Math.random()*reviews.length)
+    console.log(currentItem)
+    const item = reviews[currentItem]
+    img.src = item.src;
+    author.innerHTML = item.name
+    job.innerHTML = item.job
+    description.innerHTML = item.description
+})
