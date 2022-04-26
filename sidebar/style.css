@@ -31,3 +31,15 @@ nav .menus ul li i{
     margin-right: 30px;
     font-size: 20px;
 }
+
+.btn{
+    position: absolute;
+    top:5px;
+    right:5px;
+    background-color: transparent;
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+}
