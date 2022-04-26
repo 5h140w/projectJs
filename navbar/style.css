@@ -15,6 +15,36 @@ li a{
     text-decoration: none;
     color:black;
 }
+.logoImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 .logoImage button{
     visibility: hidden;
+}
+
+@media screen and (max-width:800px){
+    nav{
+        display: block;
+    }
+    .logoImage button{
+        visibility: visible;
+    }
+    .menu{
+        display: block;
+        text-align: center;
+        visibility: hidden;
+    }
+    .menu>li{
+        margin:15px
+    }
+    .social-icons{
+        justify-content: center;
+        visibility: hidden;
+    }
+    .social-icons.show, .menu.show{
+        visibility: visible;
+    }
 }
