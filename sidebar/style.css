@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    position:fixed;
+    height: 100vh;
+    width:300px;
+    background-color:aquamarine;
+}
+
+nav .logo{
+    padding:10px;
+}
+
+nav .menus ul>li{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+nav .menus ul li i{
+    margin-right: 30px;
+    font-size: 20px;
+}
