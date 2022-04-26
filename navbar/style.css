@@ -24,7 +24,14 @@ li a{
 .logoImage button{
     visibility: hidden;
 }
-
+.nav-toggle{
+    padding:15px;
+    background-color: transparent;
+    color: aqua;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+}
 @media screen and (max-width:800px){
     nav{
         display: block;
