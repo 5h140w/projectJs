@@ -4,12 +4,8 @@ const social = document.querySelector(".social-icons")
 let show=false
 
 btn.addEventListener("click",()=>{
-    if(!show){
-        menu.classList.add("show")
-        social.classList.add("show")
-    }else{
-        menu.classList.remove("show")
-        social.classList.remove("show")
-    }
-    show= !show;
+    
+        menu.classList.toggle("show")
+        social.classList.toggle("show")
+    
 })
