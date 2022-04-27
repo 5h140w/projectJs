@@ -16,6 +16,8 @@ nav{
     height: 100vh;
     width:300px;
     background-color:aquamarine;
+    top:0;
+    left:0;
 }
 
 nav .logo{
