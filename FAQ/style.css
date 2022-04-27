@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: coral;
+    color:black;
+    text-align: center;
+}
+
+h1{
+    padding:20px;
+}
+.questions{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+ul{
+    margin: 20px;
+}
+li{
+    background-color: antiquewhite;
+    padding: 20px;
+    overflow: auto;
+    margin: 20px;
+    border-radius: 15px;
+    width: 400px;
+}
+
+li>div{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    all:unset;
+    cursor: pointer;
+}
+.minus-icon, .text{
+    display:none
+}
+.show .minus-icon{
+    display:inline
+}
+.show .plus-icon{
+    display: none;
+}
+.show .text{
+    display: inline;
+}
+
+.text>p{
+    text-align: left;
+}
