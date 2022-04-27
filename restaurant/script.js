@@ -75,20 +75,52 @@ const menu = [
 
 
 const container = document.querySelector(".menu")
+const all = document.querySelector(".btn-all")
+const breakfast = document.querySelector(".btn-breakfast")
+const lunch = document.querySelector(".btn-lunch")
+const shakes = document.querySelector(".btn-shakes")
 
-const xx = menu.map((item)=>{
-    return `<div>
-        <div class="image">
-            <img src="${item.img}" alt="image">
-        </div>
-        <div class="item">
-            <h3>${item.title} <span>${item.price} $</span></h3>
-            <p>${item.desc}</p>
-        </div>
-    </div>`
+const display = (menu) =>{
+    const xx = menu.map((item)=>{
+        return `<div>
+            <div class="image">
+                <img src="${item.img}" alt="image">
+            </div>
+            <div class="item">
+                <h3>${item.title} <span>${item.price} $</span></h3>
+                <p>${item.desc}</p>
+            </div>
+        </div>`
+    })
+    
+    
+    const meee = xx.join("")
+    container.innerHTML=meee
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+    display(menu)
 })
 
+all.addEventListener("click",()=>{
+    display(menu)
+})
 
-const meee = xx.join("")
-console.log(meee)
-container.innerHTML=meee
+breakfast.addEventListener("click",()=>{
+    const ww = menu.filter((item)=>
+          item.category == "breakfast"
+    )
+    display(ww)
+})
+lunch.addEventListener("click",()=>{
+    const ww = menu.filter((item)=>
+          item.category == "lunch"
+    )
+    display(ww)
+})
+shakes.addEventListener("click",()=>{
+    const ww = menu.filter((item)=>
+          item.category == "shakes"
+    )
+    display(ww)
+})
