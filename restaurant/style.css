@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+h1{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    padding:20px 50px;
+}
+
+.menu>div{
+    flex:40%;
+    margin:15px;
+    display: flex;
+}
+
+.image{
+    flex:1;
+}
+.item{
+    flex:2
+}
