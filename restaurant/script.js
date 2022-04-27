@@ -90,5 +90,5 @@ const xx = menu.map((item)=>{
 
 
 const meee = xx.join("")
-
+console.log(meee)
 container.innerHTML=meee
