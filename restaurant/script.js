@@ -81,7 +81,7 @@ const lunch = document.querySelector(".btn-lunch")
 const shakes = document.querySelector(".btn-shakes")
 
 const display = (menu) =>{
-    const xx = menu.map((item)=>{
+    let xx = menu.map((item)=>{
         return `<div>
             <div class="image">
                 <img src="${item.img}" alt="image">
@@ -92,10 +92,8 @@ const display = (menu) =>{
             </div>
         </div>`
     })
-    
-    
-    const meee = xx.join("")
-    container.innerHTML=meee
+    xx = xx.join("")
+    container.innerHTML= xx
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -107,19 +105,19 @@ all.addEventListener("click",()=>{
 })
 
 breakfast.addEventListener("click",()=>{
-    const ww = menu.filter((item)=>
+    let ww = menu.filter((item)=>
           item.category == "breakfast"
     )
     display(ww)
 })
 lunch.addEventListener("click",()=>{
-    const ww = menu.filter((item)=>
+    let ww = menu.filter((item)=>
           item.category == "lunch"
     )
     display(ww)
 })
 shakes.addEventListener("click",()=>{
-    const ww = menu.filter((item)=>
+    let ww = menu.filter((item)=>
           item.category == "shakes"
     )
     display(ww)
