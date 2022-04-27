@@ -88,4 +88,7 @@ const xx = menu.map((item)=>{
     </div>`
 })
 
-console.log(xx)
+
+const meee = xx.join("")
+
+container.innerHTML=meee
