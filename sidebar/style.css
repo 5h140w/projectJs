@@ -18,12 +18,18 @@ nav{
     background-color:aquamarine;
     top:0;
     left:0;
+    transform: translate(-100%);
 }
-
+.show-sidebar {
+    transform: translate(0);
+}
 nav .logo{
     padding:10px;
+    width: 100%;
 }
-
+nav .menus{
+    width:100%
+}
 nav .menus ul>li{
     padding: 15px;
     display: flex;
@@ -37,11 +43,25 @@ nav .menus ul li i{
 .btn{
     position: absolute;
     top:5px;
-    right:5px;
+    left:300px;
     background-color: transparent;
     color: black;
     padding: 15px;
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+.sidebar-toggle:hover {
+    color: #000
 }
