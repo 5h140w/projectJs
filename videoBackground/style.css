@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.back{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+video{
+    object-fit: cover;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+}
