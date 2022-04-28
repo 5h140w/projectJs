@@ -34,14 +34,23 @@ nav{
     padding:10px 20px;
 }
 nav .logo{
+    width: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo button{
+    all: unset;
+    visibility: hidden;
+}
+.logo i{
+    color:black;
+}
+.image-logo{
     width: 50px;
     height: 50px;
 }
-.image-logo{
-    width: 100%;
-    object-fit: cover;
-}
-nav ul{
+nav .menu{
     display: flex;
     width: 450px;
     justify-content: space-around;
@@ -75,4 +84,27 @@ section{
 }
 section h2{
     color: black;
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        display: block;
+    }
+    .logo{
+        width: 100% !important;
+    }
+    .logo button{
+        visibility: visible;
+    }
+    ul.menu{
+        width: 100%  !important;
+        display: none !important;
+        text-align: center;
+    }
+    .menu>li{
+        padding: 20px;
+    }
+    ul.menu.show{
+        display: block !important;
+    }
 }
