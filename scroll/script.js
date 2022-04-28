@@ -9,7 +9,7 @@ toogle.addEventListener("click",()=>{
         banner.style.marginTop ="50px"
     } else{
         let xx = linksHeight + 50
-        banner.style.marginTop = xx+"px"
+        banner.styple.marginTop = xx+"px"
         console.log(banner)
     }
 })
