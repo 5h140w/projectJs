@@ -13,4 +13,3 @@ toogle.addEventListener("click",()=>{
         console.log(banner)
     }
 })
-
