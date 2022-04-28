@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: azure;
+}
+header{
+    background-size: cover;
+    background-image: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),url("./hero-bcg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+}
+nav .logo{
+    width: 50px;
+    height: 50px;
+}
+.image-logo{
+    width: 100%;
+    object-fit: cover;
+}
+nav ul{
+    display: flex;
+    width: 450px;
+    justify-content: space-around;
+}
+.banner{
+    margin-top: 50px;
+    min-height: 50vh;
+    display: grid;
+    text-align: center;
+    place-items: center;
+}
+
+.banner h1{
+    font-weight: 900;   
+    text-transform: uppercase;
+}
+.banner p{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.banner a {
+    border: 1px solid white;
+    padding: 2px 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+section{
+    min-height: 50vh;
+    text-align: center;
+}
+section h2{
+    color: black;
+}
