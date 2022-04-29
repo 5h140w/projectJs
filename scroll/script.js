@@ -12,7 +12,7 @@ window.addEventListener("scroll",()=>{
     }else{
         nav.classList.remove("fixed-nav")
     }
-    
+    if()
 })
 var normalSize
 window.addEventListener("load",()=>{
