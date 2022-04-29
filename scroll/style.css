@@ -16,7 +16,7 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-fixed-nav{
+.fixed-nav{
     position: fixed;
     width: 100%;
     top:0;
