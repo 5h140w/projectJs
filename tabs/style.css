@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    padding : 20px 15px;
+    width: 850px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.container>p,.container>h1{
+    text-align: center;
+}
+.tabsContainer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tabsContainer>img{
+    width:50%;
+    padding:20px
+}
+.tabs{
+    position: relative;
+    padding-left: 20px;
+    width: 100%
+}
+
+.tabs .btns{
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btns>button{
+    all:unset;
+    padding:5px 15px;
+    background-color: wheat;
+    text-align: center;
+    cursor: pointer;
+}
+button:hover{
+    background-color: bisque;
+}
+button.active{
+    background-color: aqua;
+
+}
