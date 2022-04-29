@@ -2,109 +2,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-body{
-    background-color: azure;
 }
 header{
-    background-size: cover;
-    background-image: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),url("./hero-bcg.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 20px;
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)) ,
+    url("./hero-bcg.jpeg") no-repeat center/cover;
 }
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+header nav{
+    background-color: #fff;
+    padding: 20px;
     display: flex;
-    background-color: aliceblue;
     justify-content: space-between;
     align-items: center;
-    padding:10px 20px;
 }
-nav .logo{
-    width: 100px;
+
+.imageContainer{
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
-.logo button{
-    all: unset;
-    visibility: hidden;
+
+.imageContainer img{
+    width: 100px;
+    height: 100px;
 }
-.logo i{
-    color:black;
+.imageContainer button{
+    all:unset;
+    display: none;
+    border-radius: 50%;
+    padding:20px;
+    cursor: pointer;
 }
-.image-logo{
-    width: 50px;
-    height: 50px;
-}
-nav .menu{
+
+.linksContainer .links{
     display: flex;
-    width: 450px;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
-.banner{
-    margin-top: 50px;
-    min-height: 50vh;
+.links .link{
+    margin: 0 20px;
+    text-decoration: none;
+    color: black ;
+}
+.link:hover{
+    color: blue;
+}
+header .banner{
+    height: 78vh;
+    width: 750px;
     display: grid;
-    text-align: center;
     place-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .banner h1{
-    font-weight: 900;   
-    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 900;
+    color: #fff;
 }
 .banner p{
-    max-width: 350px;
-    margin: 0 auto;
-}
-.banner a {
-    border: 1px solid white;
-    padding: 2px 10px;
-    color: white;
-    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
 }
 
-section{
-    min-height: 50vh;
-    text-align: center;
-}
-section h2{
-    color: black;
+.banner .btn{
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 800px){
-    nav{
+@media screen and (max-width:800px){
+    header nav{
         display: block;
     }
-    .logo{
-        width: 100% !important;
+    .imageContainer button{
+        display: inline-block;
     }
-    .logo button{
-        visibility: visible;
+    .linksContainer{
+        display: none;
     }
-    ul.menu{
-        width: 100%  !important;
-        display: none !important;
+    .linksContainer.show{
+        display: block;
+    }
+    .linksContainer .links{
+        display: block;
         text-align: center;
+        transition: ease-in-out 0.5s all;
     }
-    .menu>li{
-        padding: 20px;
+    .links>li{
+        padding:10px;
     }
-    ul.menu.show{
-        display: block !important;
+    header .banner{
+        width: 100%;
+        padding:0 20px;
     }
 }
