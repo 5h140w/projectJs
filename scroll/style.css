@@ -16,7 +16,12 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-
+fixed-nav{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+}
 .imageContainer{
     display: flex;
     justify-content:space-between;
@@ -50,7 +55,7 @@ header nav{
     color: blue;
 }
 header .banner{
-    height: 78vh;
+    min-height: 100vh;
     width: 750px;
     display: grid;
     place-items: center;
@@ -74,7 +79,15 @@ header .banner{
     padding: 10px 15px;
     cursor: pointer;
 }
-
+#about,#services, #tours{
+    min-height: 90vh;
+}
+#about>h1,#services>h1, #tours>h1{
+    font-size: 64px;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+}
 @media screen and (max-width:800px){
     header nav{
         display: block;
