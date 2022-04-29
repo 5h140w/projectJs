@@ -1,6 +1,8 @@
 const toggle = document.querySelector(".nav-toggle")
 const links = document.querySelector(".linksContainer")
 const nav = document.querySelector("nav")
+const topLink = document.querySelector(".top-link")
+
 toggle.addEventListener("click",()=>{
     links.classList.toggle("show")
 })
@@ -13,7 +15,9 @@ window.addEventListener("scroll",()=>{
         nav.classList.remove("fixed-nav")
     }
     if(current_heigth>500){
-        
+        topLink.classList.add("show")
+    } else{
+        topLink.classList.remove("show")
     }
 })
 var normalSize
@@ -41,3 +45,6 @@ Alllinks.forEach((link)=>{
         linksHeight !==0 ? links.classList.remove("show") : console.log("nice") 
     })
 })
+
+
+topbutton = 
