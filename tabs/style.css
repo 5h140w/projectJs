@@ -50,3 +50,11 @@ button.active{
     background-color: aqua;
 
 }
+
+.content{
+    display: none;
+}
+
+.content.show{
+    display: block;
+}
