@@ -14,12 +14,10 @@ window.addEventListener("scroll",()=>{
     }
     
 })
-
-
-//const heigth = nav.getBoundingClientRect().height
-
-//console.log(heigth)
-
+var normalSize
+window.addEventListener("load",()=>{
+    normalSize = nav.getBoundingClientRect().height
+})
 const Alllinks = document.querySelectorAll(".link")
 
 Alllinks.forEach((link)=>{
@@ -31,14 +29,12 @@ Alllinks.forEach((link)=>{
         let position = element.offsetTop-  navHeight 
         const fixed = nav.classList.contains("fixed-nav")
         let linksHeight= links.getBoundingClientRect().height
-        console.log(linksHeight)
         if(!fixed){
-            position -= navHeight +10   
+            position -= normalSize
         }
         if(navHeight>100){
             position+= linksHeight
         }
-        console.log(position)
         window.scrollTo(0,position)
         linksHeight !==0 ? links.classList.remove("show") : console.log("nice") 
     })
