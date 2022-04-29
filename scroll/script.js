@@ -12,7 +12,9 @@ window.addEventListener("scroll",()=>{
     }else{
         nav.classList.remove("fixed-nav")
     }
-    if()
+    if(current_heigth>500){
+        
+    }
 })
 var normalSize
 window.addEventListener("load",()=>{
