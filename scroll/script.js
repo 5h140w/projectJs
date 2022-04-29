@@ -47,4 +47,9 @@ Alllinks.forEach((link)=>{
 })
 
 
-topbutton = 
+const topButton = document.querySelector(".topbutton")
+
+topButton.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.scrollTo(0,0);
+})
