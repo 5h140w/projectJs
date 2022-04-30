@@ -21,6 +21,10 @@ form.addEventListener("submit",(e)=>{
     if(number.isNan || number<0 || number>tab.length-1){
         result.innerHTML = `<p> ${tab[random]} </p>`
     } else{
-        let 
+        let text = tab.slice(0,number)
+        text = text.map((element)=>{
+            return `<p> ${element} </p>`
+        }).join("")
+        result.innerHTML=text
     }
 })
