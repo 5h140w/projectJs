@@ -1,4 +1,4 @@
-const deadline = new Date(2022,3,30,12,41,00)
+const deadline = new Date(2022,4,2,11,30,00)
 const days = document.querySelector("#days")
 const hours = document.querySelector("#hours")
 const minutes = document.querySelector("#minutes")
