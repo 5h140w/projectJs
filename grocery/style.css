@@ -48,7 +48,7 @@ form input[type="submit"]{
 }
 
 .grocery .items{
-    margin-top: 20px;
+    margin: 20px 0px;
     padding: 0 10px;
 }
 
@@ -56,4 +56,25 @@ form input[type="submit"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.editButton{
+    color: green;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.deleteButton{
+    color: red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.grocery h3{
+    text-align: center;
+    font-weight: 300;
+    color:red;
+    cursor: pointer;
 }
