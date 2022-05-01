@@ -17,9 +17,43 @@ ul{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 500px;
-    text-align: center;
     padding: 30px;
     border-radius: 15px;
     background-color: azure;
     box-shadow: 5px 5px 5px #aaaaaa;
+}
+.grocery>h1{
+    text-align: center;
+    margin :20px;
+}
+.grocery form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form input[type="text"]{
+    flex:5;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+form input[type="submit"]{
+    flex:1;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.grocery .items{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.items>.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
