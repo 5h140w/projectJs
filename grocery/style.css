@@ -7,6 +7,10 @@ body{
     min-height: 100vh;
     background-color: cadetblue;
 }
+ul{
+    text-decoration: none;
+    list-style: none;
+}
 .grocery{
     position: absolute;
     top:50%;
