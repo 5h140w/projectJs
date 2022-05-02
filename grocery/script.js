@@ -4,7 +4,7 @@ const addButton = document.querySelector(".add")
 const name = document.querySelector("#name")
 const clearButton = document.querySelector("#clear")
 
-const showItems = () =>{
+const showItems = (e) =>{
     const element = GroceryList.map((value,index)=>{
         return ` <li class="item" data-id="${index}">
                     <p>${value}</p>
