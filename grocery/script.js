@@ -3,7 +3,6 @@ const items = document.querySelector(".items")
 const addButton = document.querySelector(".add")
 const name = document.querySelector("#name")
 const clearButton = document.querySelector("#clear")
-let Allitems=[]
 
 const showItems = () =>{
     const element = GroceryList.map((value,index)=>{
@@ -20,7 +19,6 @@ const showItems = () =>{
                 </li>`
     }) . join("")
     items.innerHTML = element
-    Allitems = document.querySelectorAll(".item")
 }
 window.addEventListener("load",()=>{
     showItems()
