@@ -8,6 +8,7 @@ GetFebruaryDays = (year) =>{
 }
 
 const generateCalendar = () =>{
+    const days = document.querySelector(".days")
     let currentday = new Date()
     let year = currentday.getFullYear()
     let month = currentday.getMonth()
@@ -27,22 +28,18 @@ const generateCalendar = () =>{
         {"name":"December" ,"nd":31}
     ]
     let first_day = new Date(year,month,1)
-    for (let i =0 ; i <= months[month] + first_day.getDay() - 1 ; i++){
+    console.log(first_day.getDay())
+    for (let i =0 ; i <= months[month].nd + first_day.getDay() - 1 ; i++){
+        console.log(i)
         let day = document.createElement("div")
         if(i>= first_day.getDay()){
             day.classList.add("calendar_day")
             day.innerHTML = i - first_day.getDay() +1
         }
-        
+        days.appendChild(day)
     }
 }
 
-console.log(day.getMonth())
-
-console.log(months[4].name)
 
 
-const month_name = document.getElementById("month_name")
-
-month_name.innerHTML=months[4].name
-console.log(month_name)
+generateCalendar()
