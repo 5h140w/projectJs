@@ -9,10 +9,10 @@ GetFebruaryDays = (year) =>{
 
 const generateCalendar = () =>{
     const days = document.querySelector(".days")
+    const month_name = document.querySelector("#month_name")
     let currentday = new Date()
     let year = currentday.getFullYear()
     let month = currentday.getMonth()
-
     const months=[
         {"name":"January" , "nd":31}, 
         {"name":"February", "nd":GetFebruaryDays(year)} , 
@@ -27,10 +27,9 @@ const generateCalendar = () =>{
         {"name":"November" ,"nd":30} , 
         {"name":"December" ,"nd":31}
     ]
+    month_name.innerHTML = months[month].name
     let first_day = new Date(year,month,1)
-    console.log(first_day.getDay())
     for (let i =0 ; i <= months[month].nd + first_day.getDay() - 1 ; i++){
-        console.log(i)
         let day = document.createElement("div")
         if(i>= first_day.getDay()){
             day.classList.add("calendar_day")
