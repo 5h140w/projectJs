@@ -7,12 +7,12 @@ GetFebruaryDays = (year) =>{
     return isLeap(year) ? 29 :28
 }
 
-const generateCalendar = () =>{
+const generateCalendar = (year,month) =>{
     const days = document.querySelector(".days")
     const month_name = document.querySelector("#month_name")
     let currentday = new Date()
-    let year = currentday.getFullYear()
-    let month = currentday.getMonth()
+    if(! year) year = currentday.getFullYear()
+    if(!month) month = currentday.getMonth()
     const months=[
         {"name":"January" , "nd":31}, 
         {"name":"February", "nd":GetFebruaryDays(year)} , 
