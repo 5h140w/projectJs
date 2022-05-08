@@ -18,3 +18,8 @@ body{
     height: 500px;
     background-color: black;
 }
+
+.calendar>h1{
+    color: white;
+    text-align: center;
+}

@@ -14,3 +14,11 @@ const months=[
     {"name":"December" ,"nd":31}
 ]
 console.log(day.getMonth())
+
+console.log(months[4].name)
+
+
+const month_name = document.getElementById("month_name")
+
+month_name.innerHTML=months[4].name
+console.log(month_name)
