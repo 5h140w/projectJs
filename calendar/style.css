@@ -52,3 +52,7 @@ body{
 .day_name{
     margin-bottom: 20px;
 }
+
+.current_day{
+    color: blue;
+}

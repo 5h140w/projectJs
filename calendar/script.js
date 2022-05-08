@@ -1,4 +1,4 @@
-const day = new Date()
+const current_day = new Date()
 const isLeap= (year) =>{
     return (year % 4 == 0 && year % 100 !=0 && year % 400 !=0) || (year %100 ==0 && year %400 == 0)
 }
@@ -34,6 +34,9 @@ const generateCalendar = () =>{
         if(i>= first_day.getDay()){
             day.classList.add("calendar_day")
             day.innerHTML = i - first_day.getDay() +1
+            if(i - first_day.getDay() + 1 === current_day.getDate() && year === current_day.getFullYear() && month === current_day.getMonth()){
+                day.classList.add("current_day")
+            }
         }
         days.appendChild(day)
     }
