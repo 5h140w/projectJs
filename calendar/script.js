@@ -1,4 +1,13 @@
 const day = new Date()
+const isLeap= (year) =>{
+    return (year % 4 == 0 && year % 100 !=0 && year % 400 !=0) || (year %100 ==0 && year %400 == 0)
+}
+
+GetFebruaryDays = (year) =>{
+    return isLeap(year) ? 29 :28
+}
+
+
 const months=[
     {"name":"January" , "nd":31}, 
     {"name":"February", "nd":28} , 
