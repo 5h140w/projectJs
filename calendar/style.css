@@ -16,17 +16,23 @@ body{
     transform: translate(-50%,-50%);
     border-radius: 15px;
     width: 700px;
-    height: 500px;
     background-color: black;
 }
 
-.calendar>h1{
-    color: white;
-    text-align: center;
+.calendar{
+    padding: 30px 50px;
+    position: relative;
+}
+.calendar .calendar_banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .day_name , .days{
     display: grid;
     text-align: center;
     grid-template-columns: repeat(7 , 1fr);
+    gap: 20px;
 }
