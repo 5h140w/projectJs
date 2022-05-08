@@ -28,6 +28,7 @@ const generateCalendar = () =>{
         {"name":"December" ,"nd":31}
     ]
     month_name.innerHTML = months[month].name
+    days.innerHTML=""
     let first_day = new Date(year,month,1)
     for (let i =0 ; i <= months[month].nd + first_day.getDay() - 1 ; i++){
         let day = document.createElement("div")
