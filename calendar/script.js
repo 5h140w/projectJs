@@ -25,7 +25,7 @@ const generateCalendar = (year,month) =>{
         {"name":"November" ,"nd":30} , 
         {"name":"December" ,"nd":31}
     ]
-    month_name.innerHTML = months[month].name
+    month_name.innerHTML = `${months[month].name} ${year}` 
     days.innerHTML=""
     let first_day = new Date(year,month,1)
     for (let i =0 ; i <= months[month].nd + first_day.getDay() - 1 ; i++){
@@ -49,11 +49,24 @@ window.addEventListener("load",()=>{
 })
 
 
-const next = document.querySelector(".next")
+const next = document.querySelector(".fa-chevron-right")
 next.addEventListener("click",()=>{
     month++
     if(month>11){
         year++
+        month=0
+    }
+    generateCalendar(year,month)
+})
+
+
+
+const prev = document.querySelector(".fa-chevron-left")
+prev.addEventListener("click",()=>{
+    month--
+    if(month<0){
+        year--
+        month=11
     }
     generateCalendar(year,month)
 })
