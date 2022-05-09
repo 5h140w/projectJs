@@ -25,6 +25,9 @@ const generateCalendar = (year,month) =>{
         {"name":"November" ,"nd":30} , 
         {"name":"December" ,"nd":31}
     ]
+    const color = ["#16a085","#1abc9c","#c0392b","#27ae60","#FF6860","#f39c12","#f1c40f","#e67e22","#2ecc71","#e74c3c","#d35400","#2c3e50"];
+    const calendar_banner = document.querySelector(".calendar_banner")
+    calendar_banner.style.backgroundColor = color[month]
     month_name.innerHTML = `${months[month].name} ${year}` 
     days.innerHTML=""
     let first_day = new Date(year,month,1)
